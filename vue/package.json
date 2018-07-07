@@ -35,6 +35,7 @@
       "**/src/components/*.{js,vue}",
       "!**/node_modules/**"
     ],
+    "coverageDirectory": "<rootDir>/test/unit/coverage",
     "setupTestFrameworkScriptFile": "./test/setup.js"
   },
   "devDependencies": {

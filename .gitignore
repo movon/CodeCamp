@@ -13,6 +13,3 @@ Cargo.lock
 # For webstorm IDE
 .idea/
 
-
-# For jest code coverage report
-coverage/
