@@ -1,10 +1,18 @@
 export default {
-  get: () => new Promise(resolve => {
-    resolve(
-      {
-        data: {
-          message: 'value'
+  get: (url) => new Promise(resolve => {
+    if (url.endsWith("/hello")) {
+      resolve(
+        {
+          data: {
+            message: 'value'
+          }
+        });
+    } else {
+      resolve(
+        {
+          data: 'value'
         }
-      })
+      );
+    }
   })
 }
