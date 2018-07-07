@@ -1,0 +1,12 @@
+[package]
+name = "code-camp"
+version = "0.1.0"
+authors = ["mov_on <github.com/movon/CodeCamp>"]
+
+[dependencies]
+rocket = "~0.3.14"
+rocket_codegen = "~0.3.14"
+serde = "~1.0.37"
+serde_derive = "~1.0.37"
+serde_json = "~1.0.13"
+rocket_cors = "~0.2.3"

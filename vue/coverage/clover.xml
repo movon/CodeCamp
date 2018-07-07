@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1530967262504" clover="3.2.0">
+  <project timestamp="1530967262504" name="All files">
+    <metrics statements="25" coveredstatements="13" conditionals="20" coveredconditionals="6" methods="10" coveredmethods="6" elements="55" coveredelements="25" complexity="0" loc="25" ncloc="25" packages="2" files="3" classes="3">
+      <package name="src">
+        <metrics statements="11" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <file name="App.vue" path="/home/daniel/dev/CodeCamp/vue/src/App.vue">
+          <metrics statements="6" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="19" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="21" count="0" type="stmt"/>
+        </file>
+        <file name="main.js" path="/home/daniel/dev/CodeCamp/vue/src/main.js">
+          <metrics statements="5" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="5" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="11" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components">
+        <metrics statements="14" coveredstatements="13" conditionals="10" coveredconditionals="6" methods="7" coveredmethods="6"/>
+        <file name="HelloWorld.vue" path="/home/daniel/dev/CodeCamp/vue/src/components/HelloWorld.vue">
+          <metrics statements="14" coveredstatements="13" conditionals="10" coveredconditionals="6" methods="7" coveredmethods="6"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="12" count="1" type="cond" truecount="3" falsecount="1"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="26" count="1" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="40" count="1" type="cond" truecount="2" falsecount="2"/>
+          <line num="41" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="42" count="1" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
