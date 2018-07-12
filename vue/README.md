@@ -1,4 +1,4 @@
-# my-project
+# Code Camp
 
 > CodeCamp front-end Vue.js application
 
