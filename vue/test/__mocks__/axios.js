@@ -1,5 +1,5 @@
 export default {
-  get: (url) => new Promise(resolve => {
+  get: (url) => new Promise((resolve, reject) => {
     if (url.endsWith("/hello")) {
       resolve(
         {
@@ -8,9 +8,9 @@ export default {
           }
         });
     } else {
-      resolve(
+      reject(
         {
-          data: 'value'
+          reason: 'not identified'
         }
       );
     }
