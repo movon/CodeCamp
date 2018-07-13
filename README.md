@@ -6,6 +6,16 @@ A website written in rust + vue for spreading code around the world
 
 > A Vue.js + Rocket project
 
+
+### Requirements
+```bash
+Install jdk (java)
+Install rustup (rust)
+Install npm (node package manager)
+Install yarn (alternative node package manager)
+Install gulp (automate build tasks)
+```
+
 ### Build Setup for Production
 
 ``` bash
