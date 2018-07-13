@@ -4,7 +4,10 @@ export default {
       resolve(
         {
           data: {
-            message: 'value'
+            message: 'value',
+            rocketMsg: 'rocket message',
+            items: ['Home', 'Messages', 'Friends'],
+            active: 'Home'
           }
         });
     } else {

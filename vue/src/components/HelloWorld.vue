@@ -82,10 +82,15 @@
       </li>
     </ul>
     <div is="sui-container">
-      <sui-menu :widths="3">
-        <sui-menu-item>Editorials</sui-menu-item>
-        <sui-menu-item>Reviews</sui-menu-item>
-        <sui-menu-item active>Upcoming Events</sui-menu-item>
+      <sui-menu pointing :widths="3">
+        <a
+            is="sui-menu-item"
+            v-for="item in items"
+            :active="isActive(item)"
+            :key="item"
+            :content="item"
+            @click="select(item)"
+        ></a>
       </sui-menu>
       <sui-grid celled>
         <sui-grid-row>
@@ -140,17 +145,30 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      rocketMsg: ''
+      rocketMsg: '',
+      items: [],
+      active: ''
     }
   },
   mounted () {
     axios.get('http://localhost:8000/hello')
       .then(result => {
         this.rocketMsg = result.data.message
+        this.items = result.data.items
+        this.active = result.data.active
+        console.log(this.rocketMsg)
       })
       .catch(error => {
         console.log(error)
       })
+  },
+  methods: {
+    isActive (name) {
+      return this.active === name
+    },
+    select (name) {
+      this.active = name
+    }
   }
 }
 </script>

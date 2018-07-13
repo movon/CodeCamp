@@ -27,13 +27,15 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 }
 
 #[derive(Serialize, Debug)]
-struct Test {
-    message: &'static str
+struct helloWorld {
+    message: &'static str,
+    items: Vec<&'static str>,
+    active: &'static str
 }
 
 #[get("/hello")]
 fn hello() -> String {
-    let hello_message = Test { message: "hello world" };
+    let hello_message = helloWorld { message: "hello world", items: vec!["Home", "Messages", "Friends"], active: "Home"};
     serde_json::to_string(&hello_message).unwrap()
 }
 
@@ -43,7 +45,7 @@ fn main() {
 
     let options = rocket_cors::Cors {
         allowed_origins: allowed_origins,
-        allowed_methods: vec![Method::Get].into_iter().map(From::from).collect(),
+        allowed_methods: vec![Method::Get, Method::Post].into_iter().map(From::from).collect(),
         allowed_headers: AllowedHeaders::some(&["Authorization", "Accept"]),
         allow_credentials: true,
         ..Default::default()
