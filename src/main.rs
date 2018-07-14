@@ -27,7 +27,7 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 }
 
 #[derive(Serialize, Debug)]
-struct helloWorld {
+struct HelloWorld {
     message: &'static str,
     items: Vec<&'static str>,
     active: &'static str
@@ -35,7 +35,7 @@ struct helloWorld {
 
 #[get("/hello")]
 fn hello() -> String {
-    let hello_message = helloWorld { message: "hello world", items: vec!["Home", "Messages", "Friends"], active: "Home"};
+    let hello_message = HelloWorld { message: "hello world", items: vec!["Home", "Messages", "Friends"], active: "Home"};
     serde_json::to_string(&hello_message).unwrap()
 }
 
