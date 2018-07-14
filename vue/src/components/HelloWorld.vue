@@ -156,7 +156,6 @@ export default {
         this.rocketMsg = result.data.message
         this.items = result.data.items
         this.active = result.data.active
-        console.log(this.rocketMsg)
       })
       .catch(error => {
         console.log(error)
