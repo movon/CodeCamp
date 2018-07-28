@@ -6,8 +6,8 @@ A website written in rust + vue for spreading code around the world
 
 > A Vue.js + Rocket project
 
-
 ### Requirements
+
 ```bash
 Install jdk (java)
 Install rustup (rust)
@@ -61,6 +61,6 @@ cargo run
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 For easier work with webstorm (+rust plugin) and jest testing use:
+
     - Settings -> Languages & Frameworks webpack: change configuration file location to build/webpack.base.conf.js
     - https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000357324-Get-rid-of-Unresolved-function-method-variable-warning-in-Jest-test-files
-
